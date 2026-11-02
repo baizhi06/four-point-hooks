@@ -1,0 +1,52 @@
+{
+  "name": "four-point-hooks",
+  "version": "0.2.2",
+  "description": "四个装配点，其余都是功能接口。零依赖、自带登记表、开关面板与基线检查。",
+  "type": "module",
+  "main": "src/hooks.js",
+  "exports": {
+    ".": "./src/hooks.js",
+    "./panel": "./panel/server.mjs"
+  },
+  "files": [
+    "src/",
+    "panel/",
+    "examples/",
+    "docs/",
+    "verify.mjs",
+    "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/basic.test.mjs",
+    "verify": "node verify.mjs",
+    "verify:base": "node verify.mjs --save-base",
+    "verify:cmp": "node verify.mjs --compare",
+    "doc": "node verify.mjs --write-doc",
+    "panel": "node panel/server.mjs --demo"
+  },
+  "keywords": [
+    "hooks",
+    "plugin-architecture",
+    "chatbot",
+    "zero-dependencies",
+    "esm",
+    "plugin-hooks",
+    "architecture"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baizhi06/hook-kit.git"
+  },
+  "homepage": "https://github.com/baizhi06/hook-kit#readme",
+  "bugs": {
+    "url": "https://github.com/baizhi06/hook-kit/issues"
+  },
+  "author": "baizhi06",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
