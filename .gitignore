@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.panel-switches.json
+hooks.switches.json
+.hooks-baseline.json
+# 基线快照由 examples 生成，指纹随临时文件变化，不入库
